@@ -58,6 +58,14 @@ BOARD_DEFS = {
         'cs_pin': "PC11",
         'skip_verify': True
     },
+'mks-robin-e3-nano': {
+    'mcu': "stm32f103xe",
+        'spi_bus': "swspi",
+        'spi_pins': "PC8,PD2,PC12",
+        "cs_pin": "PC11",
+        "firmware_path": "Robin_nano.bin",
+        "current_firmware_path": "Robin_nano.cur"
+    },
     'btt-octopus-f446-v1': {
         'mcu': "stm32f446xx",
         'spi_bus': "swspi",
