@@ -39,6 +39,8 @@ case $font in
      echo "Шрифт $font установлен"
 
 
+
+
    ;;
 
   "ToshibaTxL1_8x16.py")
