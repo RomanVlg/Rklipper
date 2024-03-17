@@ -8,41 +8,41 @@ select font in font8x14_Orig.py  IBMVGA_8x14.py  Termius_1251.py  TermiusBold_12
 case $font in
 
   "font8x14_Orig.py")
-     cp "$font" ~/klipper/klippy/extras/display/font8x14.py
+     cp "$font" ../klippy/extras/display/font8x14.py
      echo "Шрифт $font установлен"
 
      ;;
 
   "IBMVGA_8x14.py")
-     cp "$font" ~/klipper/klippy/extras/display/font8x14.py
+     cp "$font" ../klippy/extras/display/font8x14.py
      echo "Шрифт $font установлен"
 
 
    ;;
 
   "Termius_1251.py")
-     cp "$font" ~/klipper/klippy/extras/display/font8x14.py
+     cp "$font" ../klippy/extras/display/font8x14.py
      echo "Шрифт $font установлен"
 
 
    ;;
 
   "TermiusBold_1251.py")
-     cp "$font" ~/klipper/klippy/extras/display/font8x14.py
+     cp "$font" ../klippy/extras/display/font8x14.py
      echo "Шрифт $font установлен"
 
 
    ;;
 
   "ToshibaSat_8x14.py")
-     cp "$font" ~/klipper/klippy/extras/display/font8x14.py
+     cp "$font" ../klippy/extras/display/font8x14.py
      echo "Шрифт $font установлен"
 
 
    ;;
 
   "ToshibaTxL1_8x16.py")
-     cp "$font" ~/klipper/klippy/extras/display/font8x14.py
+     cp "$font" ../klippy/extras/display/font8x14.py
      echo "Шрифт $font установлен"
 
 

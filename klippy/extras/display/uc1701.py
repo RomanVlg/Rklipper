@@ -10,7 +10,7 @@ from . import font8x14
 
 BACKGROUND_PRIORITY_CLOCK = 0x7fffffff00000000
 
-TextGlyphs = { 'right_arrow': b'\x1a', 'degrees': b'\xf8' }
+TextGlyphs = { 'right_arrow': b'\x1a', 'degrees': b'\x80' }
 
 class DisplayBase:
     def __init__(self, io, columns=128, x_offset=0):
@@ -69,6 +69,8 @@ class DisplayBase:
                 top2, bot2 = self._swizzle_bits(icon[1])
                 self.icons[glyph_name] = (top1 + top2, bot1 + bot2)
     def write_text(self, x, y, data):
+        if data != b'\x80':
+         data = data.decode('utf-8').encode('cp1251')
         if x + len(data) > 16:
             data = data[:16 - min(x, 16)]
         pix_x = x * 8
