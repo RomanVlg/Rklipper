@@ -69,6 +69,7 @@ BOARD_DEFS = {
         'spi_bus': "swspi",
         'spi_pins': "PC8,PD2,PC12",
         "cs_pin": "PC11",
+        "conversion_script": "scripts/update_mks_robin.py",
         "firmware_path": "Robin_nano.bin",
         "current_firmware_path": "Robin_nano.cur"
     },
